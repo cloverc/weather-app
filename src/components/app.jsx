@@ -16,5 +16,4 @@ App.propTypes = {
   }).isRequired,
 };
 
-
 export default App;
