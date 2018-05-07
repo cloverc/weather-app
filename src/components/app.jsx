@@ -20,7 +20,7 @@ App.propTypes = {
     city: PropTypes.string,
     country: PropTypes.string,
   }).isRequired,
-  forecasts: PropTypes.array.isRequired,
+  forecasts: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default App;
