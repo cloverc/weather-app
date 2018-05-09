@@ -4,10 +4,10 @@ import ForecastSummary from './forecast-summary';
 
 import '../styles/forecast-summaries.scss';
 
-const ForecastSummaries = props => (
+const ForecastSummaries = Props => (
   <div className="forecast-summaries">
     {
-      props.forecasts.map(forecast => (
+      Props.forecasts.map(forecast => (
         <ForecastSummary
           key={forecast.date}
           date={forecast.date}
