@@ -27,7 +27,7 @@ describe('forecast-summary component', () => {
       />
     ));
 
-    expect(wrapper.find('.forecast-summary__temperature').text()).toEqual('mockTemperature');
+    expect(wrapper.find('.forecast-summary__temperature').text()).toEqual('mockTemperature°c');
   });
 
   it('renders the description', () => {

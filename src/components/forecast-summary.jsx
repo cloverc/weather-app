@@ -9,7 +9,7 @@ const ForecastSummary = props => (
       <span>{Moment(props.date).format('ddd Do MMM')}</span>
     </div>
     <div className="forecast-summary__temperature">
-      <span>{props.temperature}</span>
+      <span>{props.temperature}&deg;c</span>
     </div>
     <div className="forecast-summary__description">
       <span>{props.description}</span>
@@ -17,6 +17,7 @@ const ForecastSummary = props => (
     <div className="forecast-summary__icon">
       <span><WeatherIcon name="owm" iconId={props.icon} /></span>
     </div>
+    <button>More details</button>
   </div>
 );
 

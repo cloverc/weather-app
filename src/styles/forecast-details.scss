@@ -3,8 +3,14 @@
   text-align: center;
   .forecast-details__date {
     font-weight: bold;
-    font-size: 1.25em;
-    padding: 1em;
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+  div {
+    margin: 1em 0;
+  }
+  .forecast-details__label {
+    font-weight: bold;
   }
 }
 
