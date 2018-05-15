@@ -56,12 +56,12 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
-    "moduleNameMapper": {
-      "^.+\\.s?css$": "<rootDir>/__jest__/stub.js"
-    },
     "setupFiles": [
       "raf/polyfill",
       "<rootDir>/__jest__/setup.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "^.+\\.s?css$": "<rootDir>/__jest__/stub.js"
+    }
   }
 }

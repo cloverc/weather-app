@@ -17,7 +17,7 @@ const ForecastSummary = props => (
     <div className="forecast-summary__icon">
       <span><WeatherIcon name="owm" iconId={props.icon} /></span>
     </div>
-    <button>More details</button>
+    <button onClick={() => props.onSelect(props.date)}>More details</button>
   </div>
 );
 
@@ -26,6 +26,7 @@ ForecastSummary.propTypes = {
   temperature: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
 export default ForecastSummary;

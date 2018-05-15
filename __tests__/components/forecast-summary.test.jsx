@@ -9,7 +9,7 @@ describe('forecast-summary component', () => {
     const wrapper = shallow((
       <ForecastSummary
         date={testDate}
-        temperature="mockTemperature"
+        temperature={23}
         description="mockDescription"
         icon="mockIcon"
       />
@@ -20,21 +20,21 @@ describe('forecast-summary component', () => {
   it('renders the temperature', () => {
     const wrapper = shallow((
       <ForecastSummary
-        date="mockDate"
-        temperature="mockTemperature"
+        date={123}
+        temperature={23}
         description="mockDescription"
         icon="mockIcon"
       />
     ));
 
-    expect(wrapper.find('.forecast-summary__temperature').text()).toEqual('mockTemperature°c');
+    expect(wrapper.find('.forecast-summary__temperature').text()).toEqual('23°c');
   });
 
   it('renders the description', () => {
     const wrapper = shallow((
       <ForecastSummary
-        date="mockDate"
-        temperature="mockTemperature"
+        date={123}
+        temperature={23}
         description="mockDescription"
         icon="mockIcon"
       />
@@ -46,8 +46,8 @@ describe('forecast-summary component', () => {
   it('renders the icon', () => {
     const wrapper = shallow((
       <ForecastSummary
-        date="mockDate"
-        temperature="mockTemperature"
+        date={123}
+        temperature={23}
         description="mockDescription"
         icon="mockIcon"
       />

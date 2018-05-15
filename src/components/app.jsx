@@ -13,6 +13,7 @@ class App extends React.Component {
     this.state = {
       selectedDate: this.props.forecasts[0].date,
     };
+    this.handleForecastSelect = this.handleForecastSelect.bind(this);
   }
 
   handleForecastSelect(date) {
@@ -32,7 +33,10 @@ class App extends React.Component {
           city={this.props.location.city}
           country={this.props.location.country}
         />
-        <ForecastSummaries forecasts={this.props.forecasts} />
+        <ForecastSummaries
+          forecasts={this.props.forecasts}
+          onForecastSelect={this.handleForecastSelect}
+        />
         <ForecastDetails forecast={selectedForecast} />
       </div>
     );
@@ -44,7 +48,13 @@ App.propTypes = {
     city: PropTypes.string,
     country: PropTypes.string,
   }).isRequired,
-  forecasts: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  forecasts: PropTypes.arrayOf(PropTypes.shape({
+    date: PropTypes.number,
+    temperature: PropTypes.object,
+    description: PropTypes.string,
+    icon: PropTypes.string,
+  })).isRequired,
+  // onForecastSelect: PropTypes.func.isRequired,
 };
 
 export default App;
