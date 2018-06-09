@@ -1,0 +1,27 @@
+input {
+  font-size: 1.12em;
+  height: 30px;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #e4e4e4;
+  transition: border-color .4s;
+  margin-bottom: 2em;
+  margin-right: 1em;
+}
+
+input:focus {
+  border-color: #c1c1c1;
+}
+
+button {
+  height: 35px;
+  border: 1px #c1c1c1 solid;
+  font-size: 0.85em;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  z-index: 2000;
+}
