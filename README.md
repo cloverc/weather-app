@@ -2,4 +2,4 @@
 
 Bootstrap React project for Week 13 at Manchester Codes
 
-![Screenshot](screenshot.png0
+![Screenshot](screenshot.png)
